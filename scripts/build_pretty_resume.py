@@ -93,82 +93,54 @@ def md_list(items: list[str]) -> str:
 
 
 def write_readme() -> None:
-    basic_rows = "\n".join(f"| {k} | {v} |" for k, v in BASIC)
-    edu_rows = "\n".join(f"| {a} | {b} | {c} |" for a, b, c in EDU)
-    text = f"""<div align="center">
+    text = """# 马梦茹
 
-# 马梦茹
+个人简历 / Academic CV
 
-**西安电子科技大学人工智能学院 · 全职博士后 / 助理研究员**
+- 网页版简历：请通过 GitHub Pages 访问 `docs/index.html`
+- Google Scholar：https://scholar.google.com.hk/citations?user=nEPyIP8AAAAJ&hl=zh-CN
+- CSDN：https://blog.csdn.net/qq_39630875
+- 邮箱：mamengru@xidian.edu.cn
 
-[Google Scholar](https://scholar.google.com.hk/citations?user=nEPyIP8AAAAJ&hl=zh-CN) · [CSDN](https://blog.csdn.net/qq_39630875?spm=1000.2115.3001.5343)
+## 项目结构
 
-</div>
+```text
+.
+├── README.md
+├── assets/
+│   └── avatar.jpeg
+├── docs/
+│   ├── index.html
+│   └── assets/
+│       └── avatar.jpeg
+└── scripts/
+    ├── build_pretty_resume.py
+    └── docx_to_markdown.py
+```
 
-<table>
-<tr>
-<td width="74%" valign="top">
+## GitHub Pages 设置
 
-## 基本信息
+上传到 GitHub 后，在仓库中进入：
 
-| 项目 | 内容 |
-| --- | --- |
-{basic_rows}
+```text
+Settings -> Pages -> Build and deployment
+```
 
-</td>
-<td width="26%" align="center" valign="middle">
+然后选择：
 
-<img src="assets/avatar.jpeg" alt="马梦茹" width="130" />
+```text
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
+```
 
-</td>
-</tr>
-</table>
+保存后，GitHub 会生成一个公开访问地址，形式通常是：
 
-## 教育及工作经历
+```text
+https://你的用户名.github.io/仓库名/
+```
 
-| 时间 | 单位 / 专业 | 阶段 / 职务 |
-| --- | --- | --- |
-{edu_rows}
-
-## 科研方向及成果
-
-**研究方向：** 多模态大模型、多源遥感影像融合解译、图文检索、视频生成、全景重建、参考语义分割与视觉定位协同等。
-
-### 项目
-
-{md_list(PROJECTS)}
-
-### 论文
-
-中科院一区论文累计20余篇，其中以一作/通信作者发表中科院一区论文10余篇，总引用次数为417，单篇最高引用次数为95。
-
-{md_list(PAPERS)}
-
-### 专利 & 软著（授权）
-
-{md_list(PATENTS)}
-
-### 获奖荣誉
-
-{md_list(AWARDS)}
-
-## 未来工作规划
-
-**可胜任课程：** 本科生课程包括计算智能导论、人工智能概论、机器学习、深度学习、图像处理与机器视觉等；研究生课程包括神经网络、模式识别、人工智能、数字图像处理、智能图像处理等。
-
-{md_list(FUTURE)}
-
-## 公共服务
-
-{md_list(SERVICE)}
-
-## 教学工作
-
-{md_list(TEACHING)}
-
----
-
-> 网页版简历可通过 GitHub Pages 展示：`docs/index.html`。
+正式简历页面由 `docs/index.html` 提供展示。
 """
     (ROOT / "README.md").write_text(text, encoding="utf-8")
 
