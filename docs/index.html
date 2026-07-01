@@ -1,97 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>马梦茹 - 个人简历</title>
-  <style>
-    body { margin: 0; background: #eef3f7; color: #263238; font: 15px/1.72 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
-    .page { max-width: 980px; margin: 28px auto; background: #fff; box-shadow: 0 16px 48px rgba(34, 72, 102, .16); }
-    .top { display: grid; grid-template-columns: 1fr 148px; gap: 28px; padding: 38px 44px 24px; border-top: 10px solid #2778a8; }
-    h1 { margin: 0; font-size: 38px; letter-spacing: 0; color: #173f5f; }
-    .role { margin-top: 8px; color: #52616b; font-size: 17px; }
-    .links { margin-top: 14px; }
-    .links a { color: #146c94; font-weight: 700; text-decoration: none; margin-right: 16px; }
-    .avatar { width: 132px; border: 5px solid #e2edf4; }
-    section { padding: 0 44px 22px; }
-    h2 { margin: 20px 0 14px; padding: 6px 14px; color: #fff; background: #2778a8; font-size: 20px; line-height: 1.45; }
-    h3 { margin: 22px 0 8px; color: #174a6b; font-size: 17px; border-bottom: 2px solid #d8e7ef; }
-    .info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 24px; }
-    .info div { border-bottom: 1px solid #e5edf2; padding: 5px 0; }
-    .info strong { display: inline-block; min-width: 72px; color: #174a6b; }
-    table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; }
-    th, td { border: 1px solid #d9e5ec; padding: 8px 10px; vertical-align: top; }
-    th { background: #f0f7fb; color: #174a6b; }
-    ol { padding-left: 22px; margin-top: 8px; }
-    li { margin: 5px 0; }
-    .lead { font-weight: 700; color: #174a6b; }
-    @media (max-width: 720px) {
-      .page { margin: 0; box-shadow: none; }
-      .top { grid-template-columns: 1fr; padding: 28px 22px 16px; }
-      section { padding: 0 22px 18px; }
-      .info { grid-template-columns: 1fr; }
-      h1 { font-size: 32px; }
-    }
-  </style>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico?" />
+  <title>Mengru Ma | Academic Homepage</title>
+  <meta name="description" content="Academic homepage of Mengru Ma, Xidian University." />
+  <link rel="stylesheet" href="assets/academic.css" />
 </head>
-<body>
-  <main class="page">
-    <header class="top">
-      <div>
-        <h1>马梦茹</h1>
-        <div class="role">西安电子科技大学人工智能学院 · 全职博士后 / 助理研究员</div>
-        <div class="links"><a href="https://scholar.google.com.hk/citations?user=nEPyIP8AAAAJ&hl=zh-CN">Google Scholar</a><a href="https://blog.csdn.net/qq_39630875?spm=1000.2115.3001.5343">CSDN</a></div>
+<body class="academic-page">
+
+  <!-- ═══════════════ Navigation ═══════════════ -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-title" href="./">Mengru Ma</a>
+      <div class="site-links">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#service">Service</a>
+        <a href="#teaching">Teaching</a>
       </div>
-      <img class="avatar" src="assets/avatar.jpeg" alt="马梦茹" />
-    </header>
-    <section><h2>基本信息</h2><div class="info"><div><strong>姓名</strong><span>马梦茹</span></div>
-<div><strong>电话</strong><span>18832029556（同微信）</span></div>
-<div><strong>邮箱</strong><span>mamengru@xidian.edu.cn</span></div>
-<div><strong>出生年月</strong><span>1996.07</span></div>
-<div><strong>导师</strong><span>焦李成</span></div>
-<div><strong>学历</strong><span>博士研究生</span></div></div></section>
-    <section><h2>教育及工作经历</h2><table><thead><tr><th>时间</th><th>单位 / 专业</th><th>阶段 / 职务</th></tr></thead><tbody><tr><td>2024.12-至今</td><td>西安电子科技大学人工智能学院</td><td>全职博士后，助理研究员</td></tr>
-<tr><td>2021.03-2024.12</td><td>西安电子科技大学，计算机科学与技术</td><td>博士阶段</td></tr>
-<tr><td>2019.08-2021.03</td><td>西安电子科技大学，计算机科学与技术</td><td>硕士阶段</td></tr>
-<tr><td>2015.08-2019.06</td><td>河北工程大学，通信工程</td><td>本科阶段</td></tr></tbody></table></section>
-    <section><h2>科研方向及成果</h2><p><span class="lead">研究方向：</span>多模态大模型、多源遥感影像融合解译、图文检索、视频生成、全景重建、参考语义分割与视觉定位协同等。</p><h3>项目</h3><ol><li>2025年中国博士后科学基金面上项目，2025M771532，2025年6月-至今，在研，主持。</li>
-<li>陕西省人力资源和社会保障厅：陕西省博士后科研项目资助三等资助，2025年10月，在研，主持。</li>
-<li>2023年西安电子科技大学优秀博士学位论文资助基金：空谱超融合表征学习理论及应用研究，2023-至今，在研，主持。</li>
-<li>2022年研究生创新基金项目：多尺度空谱选择的多模态遥感影像超融合解译，YJS2202，2022年3月-2022年12月，结题，主持。</li>
-<li>2023年国家自然科学基金面上项目：基于多尺度稀疏表征学习的超融合解译研究，62276199，2023-至今，在研，参与（核心成员）。</li></ol><h3>论文</h3><p>中科院一区论文累计20余篇，其中以一作/通信作者发表中科院一区论文10余篇，总引用次数为417，单篇最高引用次数为95。</p><ol><li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Li Lingling, Feng Zhixi, Yang Shuyuan. A Multimodal Hyper-fusion Transformer for Remote Sensing Image Classification. Information Fusion, 2023, 96: 66-79.</li>
-<li>Ma Mengru, Ma Wenping, Jiao Licheng, Li Lingling, Liu Xu, Liu Fang, Yang Shuyuan, Guo Yuwei. A 3D Self-Awareness Diffusion Network for Multimodal Classification. IEEE Transactions on Multimedia, 2025, 27: 3462-3475.</li>
-<li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Liu Fang, Li Lingling, Yang Shuyuan. MBSI-Net: Multimodal Balanced Self-Learning Interaction Network for Image Classification. IEEE Transactions on Circuits and Systems for Video Technology, 2023, 34(5): 3819-3833.</li>
-<li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Liu Fang, Li Lingling. Transfer Representation Learning Meets Multimodal Fusion Classification for Remote Sensing Images. IEEE Transactions on Geoscience and Remote Sensing, 2022, 60: 5632415.</li>
-<li>Ma Mengru, Zhao Jiaxuan, Ma Wenping, Jiao Licheng, Li Lingling, Liu Xu, Liu Fang, Yang Shuyuan. A Mamba-aware Spatial Spectral Cross-modal Network for Remote Sensing Classification. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4402515.</li>
-<li>Ma Wenping, Ma Mengru（通信作者）, Jiao Licheng, Liu Fang, Zhu Hao, Liu Xu, Yang Shuyuan, Hou Biao. An Adaptive Migration Collaborative Network for Multimodal Image Classification. IEEE Transactions on Neural Networks and Learning Systems, 2023, 35: 10935-10949.</li>
-<li>Ma Wenping, Chen Chuang, Ma Mengru（通信作者）, Zhang Hekai, Zhu Hao, Jiao Licheng. An Adaptive Dual-supervised Cross-deep Dependency Network for Pixel-wise Classification. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4402713.</li>
-<li>Ma Wenping, Zhang Hekai, Ma Mengru（通信作者）, Chen Chuang, Hou Biao. ISSP-Net: An Interactive Spatial-Spectral Perception Network for Multimodal Classification. IEEE Transactions on Geoscience and Remote Sensing, 2024, 62: 4412014.</li>
-<li>Ma Wenping, Xue Boyou, Ma Mengru（通信作者）, Chen Chuang, Zhang Hekai, Zhu Hao. A Diff-Attention Aware State Space Fusion Model for Remote Sensing Classification. IEEE Transactions on Geoscience and Remote Sensing, 2025, 63: 4421315.</li>
-<li>Ma Wenping, Zhang Hekai, Ma Mengru（通信作者）, Xue Boyou, Zhu Hao. HCMA-Net: Hierarchical Cross-Modality Aggregation Network for Multimodal Remote Sensing Image Classification. IEEE Transactions on Geoscience and Remote Sensing, 2025, 64: 4400417.</li>
-<li>Jiao Licheng, Ma Mengru, He Pei, Geng Xueli, Liu Xu, Liu Fang, Ma Wenping, Yang Shuyuan, Hou Biao, Tang Xu. Brain-Inspired Learning, Perception, and Cognition: A Comprehensive Review. IEEE Transactions on Neural Networks and Learning Systems, 2024, 36(4): 5921-5941.</li>
-<li>Zhu Hao, Ma Mengru, Ma Wenping, Jiao Licheng, Hong Shikuan, Shen Jianchao, Hou Biao. A Spatial-channel Progressive Fusion ResNet for Remote Sensing Classification. Information Fusion, 2021, 70: 72-87.</li>
-<li>Jiaxuan Zhao, Licheng Jiao, Lingling Li, Mengru Ma, Xu Liu, Chao Wang, Fang Liu, Wenping Ma, Shuyuan Yang. S3Diffuser: Frequency selected state space guided diffusion model for multimodal fusion classification. Information Fusion, 2025, 125: 103447.</li></ol><h3>专利 & 软著（授权）</h3><ol><li>马文萍、马梦茹、朱浩、武越、焦李成，一种逐像素分类方法、存储介质及分类设备，2024-02-06，中国，ZL 2020 1 0819496.0。（学生一作）</li>
-<li>朱浩、马梦茹、洪世宽、马文萍、张俊、焦李成，一种基于多视点深度特征融合SENet网络的分类方法，2023-04-07，中国，ZL 2020 1 0373506.2。（学生一作）</li>
-<li>马文萍、马梦茹、洪世宽、武越、朱浩、焦李成，基于深度学习的人脸检测识别系统软件V1.0，2020SR0130837。（学生一作）</li>
-<li>马梦茹、洪世宽、朱浩、李亚婷。基于视觉人脸识别签到管理系统，2019SR1248697。</li></ol><h3>获奖荣誉</h3><ol><li>中国电子教育学会2025年度优秀博士学位论文优秀奖。</li>
-<li>2026年获西安电子科技大学本科生教学准入证。</li>
-<li>2022年 1st ACRE Cascade Competition 国际级冠军。</li>
-<li>2021年 CVPR NTIRE 2021 Challenge on Multi-modal Aerial View Object Classification: Track 2 EO + SAR 冠军。</li>
-<li>2023年获得“国家奖学金”和“盛路社会奖学金”。</li>
-<li>2024年获得“国家奖学金”和“中国电子科技集团公司-西安电子科技大学协同创新奖学金”。</li></ol></section>
-    <section><h2>未来工作规划</h2><p><span class="lead">可胜任课程：</span>本科生课程包括计算智能导论、人工智能概论、机器学习、深度学习、图像处理与机器视觉等；研究生课程包括神经网络、模式识别、人工智能、数字图像处理、智能图像处理等。</p><ol><li>极端环境下的图像融合解译：充分挖掘源图像信息，解决夜间、雨雾、过曝、欠曝等极端问题。</li>
-<li>面向语义分割与视觉定位协同的遥感参考理解：从微尺度跨模态特征增强与“先定位、后验证”的粗细粒度对齐层级推理两方面突破。</li>
-<li>文生视频的状态一致性建模：在推理阶段显式建模语义、外观与运动状态，提升视频生成的时空一致性与稳定性。</li>
-<li>由卫星图生成全景图的跨视角重建：从多尺度特征对齐、跨视角几何关系建模以及语义一致性约束等角度探索。</li></ol></section>
-    <section><h2>公共服务</h2><ol><li>会议报告：基于Mamba感知的空谱跨模态遥感影像融合分类，第二届人工智能与遥感科学交叉论坛（AIRS-2025），云南昆明，2025-07-18至2025-07-20。</li>
-<li>人工智能科普：人工智能的发展现状及其影响，2025年陕西省全国科普月重点活动暨宝鸡市主场活动科普进校园报告会，陕西宝鸡，2025-09-12。</li>
-<li>中国图象图形学学会会员，中国电子教育学会会员，陕西省女科技工作者协会会员。</li>
-<li>担任 IEEE TNNLS，TCSVT，EAAI，Scientific Data journal (Nature)，AAAI 等权威期刊及会议审稿人。</li>
-<li>2021年至今连续四年独立负责智能感知与图像理解（IPIU）实验室公众号和今日头条，及西电人工智能研究院公众号运营，流量累计3.6万次。</li>
-<li>负责课题组会议组织、安排及团建活动，累计35人次；学术博客（CSDN）72篇原创，1000+粉丝，访问量10万+。</li></ol></section>
-    <section><h2>教学工作</h2><ol><li>2025学年春季学期，计算智能课程导论。56学时，线下40学时，线上16学时。主要负责作业批改、实验课程授课、习题课答疑、热点科普等工作，96人次。</li>
-<li>2025学年秋季学期，新生研讨与学科导论，20人次。</li>
-<li>2025年度参加新入职教师教学基本技能培训，完成专题培训、微格教学、汇报展示等，考核合格。</li></ol></section>
+    </nav>
+  </header>
+
+  <!-- ═══════════════ Main Shell ═══════════════ -->
+  <main class="academic-shell">
+    <div class="profile-layout">
+
+      <!-- ── Sidebar ── -->
+      <aside class="profile-card" aria-label="Profile">
+        <img class="profile-photo" src="assets/avatar.jpeg" alt="Mengru Ma" />
+        <div>
+          <h1 class="profile-name">Mengru Ma</h1>
+          <p class="profile-title">马梦茹<br />Postdoctoral Researcher /<br />Assistant Research Fellow</p>
+          <ul class="profile-meta">
+            <li><strong>School:</strong> Xidian University</li>
+            <li><strong>Affiliations:</strong> <a href="https://sai.xidian.edu.cn/">School of Artificial Intelligence</a>; Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education</li>
+            <li><strong>Location:</strong> Xi'an, China</li>
+            <li><strong>Email:</strong> <a href="mailto:mamengru@xidian.edu.cn">mamengru@xidian.edu.cn</a></li>
+            <li><strong>Phone:</strong> 18832029556</li>
+            <li><strong>Advisor:</strong> Prof. Licheng Jiao</li>
+          </ul>
+          <div class="profile-links">
+            <a href="https://scholar.google.com.hk/citations?user=nEPyIP8AAAAJ&hl=zh-CN">Google Scholar</a>
+            <a href="https://blog.csdn.net/qq_39630875?spm=1000.2115.3001.5343">CSDN</a>
+            <a href="https://github.com/ru-willow">GitHub</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ── Content Panel ── -->
+      <article class="content-panel">
+
+        <!-- ── Hero / About ── -->
+        <section class="hero-block" id="about">
+          <h1>Mengru Ma (马梦茹)</h1>
+          <p>
+            I am a Postdoctoral Researcher and Assistant Research Fellow at the
+            <a href="https://sai.xidian.edu.cn/">School of Artificial Intelligence</a>,
+            <a href="https://www.xidian.edu.cn/">Xidian University</a>, advised by
+            <a href="https://scholar.google.com/citations?user=FZbrL2YAAAAJ">Prof. Licheng Jiao</a>.
+            I am also a member of the Key Laboratory of Intelligent Perception and Image Understanding of Ministry of Education.
+            My research focuses on multimodal large models, multi-source remote sensing image fusion and interpretation,
+            image-text retrieval, video generation, panoramic reconstruction, and vision-language grounding.
+          </p>
+          <p>
+            I received my Ph.D. in Computer Science and Technology from Xidian University in December 2024,
+            supervised by Prof. Licheng Jiao. Prior to that, I received my B.Eng. in Communication Engineering
+            from Hebei University of Engineering in 2019.
+          </p>
+
+          <div class="highlight-strip" aria-label="Research highlights">
+            <div class="metric">
+              <strong>20+ Papers</strong>
+              <span>Published in Information Fusion, IEEE TMM, TNNLS, TCSVT, TGRS and related venues</span>
+            </div>
+            <div class="metric">
+              <strong>10+ Lead Works</strong>
+              <span>First-author or corresponding-author papers in CAS Q1 journals</span>
+            </div>
+            <div class="metric">
+              <strong>417 Citations</strong>
+              <span>Total citations with 95 highest single-paper citations</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── News ── -->
+        <section class="section" id="news">
+          <h2>News</h2>
+          <ul class="news-list">
+            <li><span class="news-date">2026.06</span><span>🎉 Awarded the Excellent Doctoral Dissertation Award from China Institute of Electronics Education.</span></li>
+            <li><span class="news-date">2026.03</span><span>📜 Obtained Xidian University Undergraduate Teaching Certification.</span></li>
+            <li><span class="news-date">2025.10</span><span>🎉 Awarded the Shaanxi Postdoctoral Research Funding (Third Class).</span></li>
+            <li><span class="news-date">2025.07</span><span>🎤 Oral presentation at AIRS-2025: Mamba-aware Spatial-Spectral Cross-modal Remote Sensing Fusion Classification.</span></li>
+            <li><span class="news-date">2025.06</span><span>🎉 Awarded the General Program of China Postdoctoral Science Foundation (2025M771532).</span></li>
+            <li><span class="news-date">2024.12</span><span>🎓 Received Ph.D. in Computer Science and Technology from Xidian University.</span></li>
+            <li><span class="news-date">2024.10</span><span>🏅 Awarded National Scholarship and CETC-Xidian Collaborative Innovation Scholarship.</span></li>
+            <li><span class="news-date">2023.10</span><span>🏅 Awarded National Scholarship and Shenglu Social Scholarship.</span></li>
+            <li><span class="news-date">2022.05</span><span>🏆 Won 1st place in ACRE Cascade Competition (international).</span></li>
+            <li><span class="news-date">2021.06</span><span>🏆 Won 1st place in CVPR NTIRE 2021 Challenge on Multi-modal Aerial View Object Classification, Track 2 (EO + SAR).</span></li>
+          </ul>
+        </section>
+
+        <!-- ── Research Interests ── -->
+        <section class="section" id="research">
+          <h2>Research Interests</h2>
+          <div class="research-grid">
+            <div class="research-item">
+              <h3>Multimodal Remote Sensing Fusion &amp; Interpretation</h3>
+              <p>Multi-source remote sensing image fusion, multimodal representation learning, hyperspectral and SAR image joint interpretation, cross-modal feature enhancement.</p>
+              <p class="representative-work">Representative works:
+                <a href="https://ieeexplore.ieee.org/document/10103667">Information Fusion 2023</a>,
+                <a href="https://ieeexplore.ieee.org/document/10855536">IEEE TMM 2025</a>,
+                <a href="https://ieeexplore.ieee.org/document/10926794">IEEE TGRS 2025</a>.
+              </p>
+            </div>
+            <div class="research-item">
+              <h3>Vision-Language Grounding &amp; Generation</h3>
+              <p>Image-text retrieval, referring segmentation and visual grounding collaboration, text-to-video generation with temporal-consistent state modeling.</p>
+              <p class="representative-work">Representative works:
+                <a href="https://ieeexplore.ieee.org/document/10354301">IEEE TCSVT 2024</a>,
+                <a href="https://ieeexplore.ieee.org/document/10891511">IEEE TGRS 2025</a>.
+              </p>
+            </div>
+            <div class="research-item">
+              <h3>Brain-Inspired Learning &amp; Cross-View Reconstruction</h3>
+              <p>Brain-inspired perception and cognition, cross-view panoramic reconstruction from satellite imagery, multi-scale geometric alignment.</p>
+              <p class="representative-work">Representative survey:
+                <a href="https://ieeexplore.ieee.org/document/10792997">IEEE TNNLS 2024</a>.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── Selected Publications ── -->
+        <section class="section" id="publications">
+          <h2>Selected Publications</h2>
+          <p class="note">* denotes corresponding author. Papers are from CAS Q1 journals unless otherwise noted.</p>
+
+          <h3>First-author &amp; Corresponding-author Publications</h3>
+          <ol class="publication-list">
+            <li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Li Lingling, Feng Zhixi, Yang Shuyuan. A Multimodal Hyper-fusion Transformer for Remote Sensing Image Classification. <span class="venue">Information Fusion</span>, 2023, 96: 66-79. <span class="tag">JCR Q1</span> <span class="tag">IF 17.4</span></li>
+
+            <li>Ma Mengru, Ma Wenping, Jiao Licheng, Li Lingling, Liu Xu, Liu Fang, Yang Shuyuan, Guo Yuwei. A 3D Self-Awareness Diffusion Network for Multimodal Classification. <span class="venue">IEEE TMM</span>, 2025, 27: 3462-3475. <span class="tag">JCR Q1</span> <span class="tag">IF 6.3</span></li>
+
+            <li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Liu Fang, Li Lingling, Yang Shuyuan. MBSI-Net: Multimodal Balanced Self-Learning Interaction Network for Image Classification. <span class="venue">IEEE TCSVT</span>, 2023, 34(5): 3819-3833. <span class="tag">JCR Q1</span> <span class="tag">IF 10.8</span></li>
+
+            <li>Ma Mengru, Ma Wenping, Jiao Licheng, Liu Xu, Liu Fang, Li Lingling. Transfer Representation Learning Meets Multimodal Fusion Classification for Remote Sensing Images. <span class="venue">IEEE TGRS</span>, 2022, 60: 5632415. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Ma Mengru, Zhao Jiaxuan, Ma Wenping, Jiao Licheng, Li Lingling, Liu Xu, Liu Fang, Yang Shuyuan. A Mamba-aware Spatial Spectral Cross-modal Network for Remote Sensing Classification. <span class="venue">IEEE TGRS</span>, 2025, 63: 4402515. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Ma Wenping, Ma Mengru*, Jiao Licheng, Liu Fang, Zhu Hao, Liu Xu, Yang Shuyuan, Hou Biao. An Adaptive Migration Collaborative Network for Multimodal Image Classification. <span class="venue">IEEE TNNLS</span>, 2023, 35: 10935-10949. <span class="tag">JCR Q1</span> <span class="tag">IF 9.7</span></li>
+
+            <li>Ma Wenping, Chen Chuang, Ma Mengru*, Zhang Hekai, Zhu Hao, Jiao Licheng. An Adaptive Dual-supervised Cross-deep Dependency Network for Pixel-wise Classification. <span class="venue">IEEE TGRS</span>, 2025, 63: 4402713. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Ma Wenping, Zhang Hekai, Ma Mengru*, Chen Chuang, Hou Biao. ISSP-Net: An Interactive Spatial-Spectral Perception Network for Multimodal Classification. <span class="venue">IEEE TGRS</span>, 2024, 62: 4412014. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Ma Wenping, Xue Boyou, Ma Mengru*, Chen Chuang, Zhang Hekai, Zhu Hao. A Diff-Attention Aware State Space Fusion Model for Remote Sensing Classification. <span class="venue">IEEE TGRS</span>, 2025, 63: 4421315. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Ma Wenping, Zhang Hekai, Ma Mengru*, Xue Boyou, Zhu Hao. HCMA-Net: Hierarchical Cross-Modality Aggregation Network for Multimodal Remote Sensing Image Classification. <span class="venue">IEEE TGRS</span>, 2025, 64: 4400417. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+          </ol>
+
+          <h3>Collaborative Publications</h3>
+          <ol class="publication-list">
+            <li>Jiao Licheng, Ma Mengru, He Pei, Geng Xueli, Liu Xu, Liu Fang, Ma Wenping, Yang Shuyuan, Hou Biao, Tang Xu. Brain-Inspired Learning, Perception, and Cognition: A Comprehensive Review. <span class="venue">IEEE TNNLS</span>, 2024, 36(4): 5921-5941. <span class="tag">JCR Q1</span> <span class="tag">IF 9.7</span></li>
+
+            <li>Zhu Hao, Ma Mengru, Ma Wenping, Jiao Licheng, Hong Shikuan, Shen Jianchao, Hou Biao. A Spatial-channel Progressive Fusion ResNet for Remote Sensing Classification. <span class="venue">Information Fusion</span>, 2021, 70: 72-87. <span class="tag">JCR Q1</span> <span class="tag">IF 17.4</span></li>
+
+            <li>Zhao Jiaxuan, Jiao Licheng, Li Lingling, Ma Mengru, Liu Xu, Wang Chao, Liu Fang, Ma Wenping, Yang Shuyuan. S3Diffuser: Frequency Selected State Space Guided Diffusion Model for Multimodal Fusion Classification. <span class="venue">Information Fusion</span>, 2026, 125: 103447. <span class="tag">JCR Q1</span> <span class="tag">IF 17.4</span></li>
+
+            <li>Zhao Jiaxuan, Jiao Licheng, Li Lingling, Ma Mengru, Liu Xu, Wang Chao, Liu Fang, Ma Wenping, Yang Shuyuan. Modality-Prior Aware Progressive Diffusion Pansharpening. <span class="venue">IEEE TGRS</span>, 2026, 64: 1-15. <span class="tag">JCR Q1</span> <span class="tag">IF 9.4</span></li>
+
+            <li>Zhao Jiaxuan, Jiao Licheng, Wang Chao, Liu Xu, Liu Fang, Li Lingling, Ma Mengru, Yang Shuyuan. Knowledge Guided Evolutionary Transformer for Remote Sensing Scene Classification. <span class="venue">IEEE TCSVT</span>, 2024, 34(10): 10368-10384. <span class="tag">JCR Q1</span> <span class="tag">IF 10.8</span></li>
+          </ol>
+        </section>
+
+        <!-- ── Projects ── -->
+        <section class="section" id="projects">
+          <h2>Selected Projects</h2>
+          <div class="project-grid">
+            <div class="project-item">
+              <h3>Multimodal Fusion &amp; Interpretation</h3>
+              <p>Multi-scale sparse representation learning for hyperspectral fusion and interpretation.</p>
+              <div class="link-row">
+                <span>PI: NSFC General Program 62276199 (core member)</span>
+              </div>
+            </div>
+            <div class="project-item">
+              <h3>Postdoctoral Research</h3>
+              <p>China Postdoctoral Science Foundation &amp; Shaanxi Postdoctoral Research Funding.</p>
+              <div class="link-row">
+                <span>PI: 2025M771532 (ongoing)</span>
+              </div>
+            </div>
+            <div class="project-item">
+              <h3>Doctoral Innovation Fund</h3>
+              <p>Space-spectral hyper-fusion representation learning theory and application.</p>
+              <div class="link-row">
+                <span>PI: Xidian Univ. Excellent Doctoral Dissertation Fund</span>
+              </div>
+            </div>
+          </div>
+
+          <h3>Patents (Granted)</h3>
+          <ol class="publication-list">
+            <li>马文萍、<strong>马梦茹</strong>、朱浩、武越、焦李成. 一种逐像素分类方法、存储介质及分类设备，ZL 2020 1 0819496.0, 2024-02-06. <span class="tag">Student 1st</span></li>
+            <li>朱浩、<strong>马梦茹</strong>、洪世宽、马文萍、张俊、焦李成. 一种基于多视点深度特征融合SENet网络的分类方法，ZL 2020 1 0373506.2, 2023-04-07. <span class="tag">Student 1st</span></li>
+            <li>马文萍、<strong>马梦茹</strong>、洪世宽、武越、朱浩、焦李成. 基于深度学习的人脸检测识别系统软件V1.0, 2020SR0130837. <span class="tag">Software</span></li>
+            <li><strong>马梦茹</strong>、洪世宽、朱浩、李亚婷. 基于视觉人脸识别签到管理系统, 2019SR1248697. <span class="tag">Software</span></li>
+          </ol>
+        </section>
+
+        <!-- ── Honors & Service ── -->
+        <section class="section" id="service">
+          <h2>Honors, Service &amp; Education</h2>
+
+          <h3>Honors &amp; Awards</h3>
+          <ul class="compact-list">
+            <li>Excellent Doctoral Dissertation Award, China Institute of Electronics Education, 2025.</li>
+            <li>Xidian University Undergraduate Teaching Certification, 2026.</li>
+            <li>1st Place, ACRE Cascade Competition (International), 2022.</li>
+            <li>1st Place, CVPR NTIRE 2021 Challenge on Multi-modal Aerial View Object Classification, Track 2 (EO + SAR), 2021.</li>
+            <li>National Scholarship (2023, 2024).</li>
+            <li>Shenglu Social Scholarship, 2023.</li>
+            <li>CETC-Xidian Collaborative Innovation Scholarship, 2024.</li>
+          </ul>
+
+          <h3>Academic Service</h3>
+          <ul class="compact-list">
+            <li>Reviewer for IEEE TNNLS, TCSVT, EAAI, Scientific Data (Nature), AAAI and related venues.</li>
+            <li>Member of China Society of Image and Graphics (CSIG), China Institute of Electronics Education, Shaanxi Women in Science and Technology Association.</li>
+            <li>Oral presentation at AIRS-2025: Mamba-aware Spatial-Spectral Cross-modal Remote Sensing Fusion Classification, Kunming, 2025.07.</li>
+            <li>AI science popularization talk: Development and Impact of AI, Baoji, Shaanxi Provincial Science Month, 2025.09.</li>
+            <li>Operated IPIU lab WeChat public account and Toutiao (2021-present, 36K+ cumulative visits).</li>
+            <li>72 original CSDN articles, 1000+ followers, 100K+ visits.</li>
+          </ul>
+
+          <h3>Education</h3>
+          <ul class="compact-list">
+            <li>2021.03–2024.12, Ph.D. in Computer Science and Technology, School of Artificial Intelligence, Xidian University. Advisor: Prof. Licheng Jiao.</li>
+            <li>2019.08–2021.03, M.S. in Computer Science and Technology, School of Artificial Intelligence, Xidian University. (Transferred to Ph.D.)</li>
+            <li>2015.08–2019.06, B.Eng. in Communication Engineering, Hebei University of Engineering.</li>
+          </ul>
+        </section>
+
+        <!-- ── Teaching ── -->
+        <section class="section" id="teaching">
+          <h2>Teaching</h2>
+          <ul class="compact-list">
+            <li><strong>Introduction to Computational Intelligence</strong>, Spring 2025. 56 credit hours (40 offline + 16 online). Assignment grading, lab instruction, Q&amp;A sessions, and popular science talks; 96 students.</li>
+            <li><strong>Freshman Seminar &amp; Discipline Introduction</strong>, Fall 2025. 20 students.</li>
+            <li>Completed New Faculty Teaching Skills Training (2025): thematic training, micro-teaching, presentation, and assessment — all passed.</li>
+            <li><strong>Courses qualified to teach:</strong> Introduction to Computational Intelligence, Introduction to AI, Machine Learning, Deep Learning, Image Processing &amp; Computer Vision (undergraduate); Neural Networks, Pattern Recognition, Artificial Intelligence, Digital Image Processing, Intelligent Image Processing (graduate).</li>
+          </ul>
+        </section>
+
+        <!-- ── Future Directions ── -->
+        <section class="section" id="future">
+          <h2>Future Research Directions</h2>
+          <ol class="compact-list">
+            <li><strong>Image Fusion &amp; Interpretation in Extreme Environments:</strong> Fully exploit source image information to address challenges such as nighttime, rain/fog, over-exposure, and under-exposure.</li>
+            <li><strong>Referring Remote Sensing Understanding via Segmentation-Grounding Synergy:</strong> Break through from micro-scale cross-modal feature enhancement and coarse-to-fine hierarchical reasoning with "localize first, verify later" strategy.</li>
+            <li><strong>State-consistent Text-to-Video Generation:</strong> Explicitly model semantic, appearance, and motion states during inference to improve spatiotemporal consistency and stability.</li>
+            <li><strong>Cross-view Panoramic Reconstruction from Satellite Imagery:</strong> Explore multi-scale feature alignment, cross-view geometric relationship modeling, and semantic consistency constraints.</li>
+          </ol>
+        </section>
+
+      </article>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <p>Last updated: June 2026 &nbsp;|&nbsp; Mengru Ma &copy; 2026</p>
+  </footer>
+
 </body>
 </html>
